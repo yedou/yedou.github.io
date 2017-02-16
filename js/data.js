@@ -80,8 +80,11 @@
                 })
         
         });
-        NProgress.done();
-        $(".mark").animate({"opacity":0},200,function(){$(this).css("display","none")});
+        setTimeout(function(){
+            NProgress.done();
+            $(".mark").animate({"opacity":0},200,function(){$(this).css("display","none")});
+        },5000)
+        
 
        })
         .fail(function(){console.log("fail loading")});
