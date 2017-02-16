@@ -1,4 +1,4 @@
-a {outline:none;}
+a:focus {outline:none;}
 .clearfix:after {
   content:"";
   visibility:hidden;
