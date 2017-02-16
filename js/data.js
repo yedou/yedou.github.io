@@ -1,5 +1,6 @@
 
-    
+        //加载条改变
+        NProgress.start();
         $.when($.ajax("data/text.json"))
         .done(function(data){
             
@@ -78,8 +79,9 @@
                     $(this).html(zhen[0].page3[index]);
                 })
         
-        })
-        
+        });
+        $NProgress.done();
+        $(".mark").animate({"opacity":0},200,function(){$(this).css("display","none")});
 
        })
         .fail(function(){console.log("fail loading")});
