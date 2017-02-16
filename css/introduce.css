@@ -3,7 +3,7 @@ html,body{height:100%;width:100%;overflow:hidden;}
 @media only screen and (max-width:768px) {
     html,body {overflow:visible;}
 }
-a {outline:none;}
+a:focus {outline:none;}
 a:hover,a:active,a:visited,a:link{text-decoration:none;}
 /*中文字体*/
 @font-face {
