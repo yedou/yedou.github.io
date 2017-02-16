@@ -1,0 +1,32 @@
+[
+    {"zh":[
+        {
+            "page1":{
+                "nav":["简介","作品","联系我","assets/1486383359_China.png"],
+                "name":"我是石磊",
+                "job":"前端开发工程师",
+                "info":["我是一名23岁的前端工程师,崇尚新事物和更加便利的生活,喜爱一切美的东西</br>,热衷效率的提高和新的技术,时常活在“墙”外.","我大学时所学专业是工业设计,随后感觉热情并不在于此,迷茫过思考过</br>,最终通过网络接触到了前端工程师,感觉到了这才是让自己充满热情度过每一天的领域。</br>大学专业学习之外,便将所有时间和精力花在前端相关技能,</br>前端也和用户体验密切相关,我会经常和认识的一批设计师朋友交流合作,</br>学习用户体验和美学方面的知识,作为技术之外的补充."],
+                "pdf":"下载简历PDF",
+                "work":"作品"
+            },
+           
+            "page3":["电话","邮箱","QQ","微信"]
+        }
+    ]},
+    {"en":[
+        {
+            "page1":{
+                "nav":["About","Work","Contact","assets/1486383383_United-States-of-America.png"],
+                "name":"I’M SHILEI.",
+                "job":"Frontend Developer",
+                "info":["I’m a 23 years old frontend-developer, seeking for new things and simple life,</br> love all beautiful stuff, obsessed in skill development and fresh technology,</br> always live in global Internet world.",""],
+                "pdf":"Download PDF Resume",
+                "work":"work"
+                
+            },
+            
+            "page3":["Phone","Email","QQ","Wechat"]
+            
+        }
+    ]}
+]

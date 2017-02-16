@@ -1,0 +1,206 @@
+
+.clearfix:after {
+  content:"";
+  visibility:hidden;
+  height:0;
+  display:block;
+  clear:both;
+}
+.clearfix {
+  zoom:1;
+}
+/*
+img {
+	width:100%;
+}
+*/
+ul li {
+  list-style:none;
+}
+ul {
+  padding:0;
+  margin:0;
+}
+/*只有内核是webkit这个属性才有效*/
+::-webkit-scrollbar{width:0px}
+body,html {
+  height:100%;
+}
+.container-fluid {
+  height:100%;
+}
+
+.col-sm-2 {
+  position:fixed;
+  padding-left:0;
+  padding-right:0;
+  height:100%;
+  text-align:center;
+  background:#272e4a;
+}
+/*bootstrap 自身就是媒体查询 再用问题查询应该放在其下面*/
+@media only screen and (max-width:768px) {
+  .col-sm-2 {
+    position:relative;
+    padding-right:0;
+  }
+}
+.col-sm-10 {
+  height:100%;
+  padding-left:30px;
+}
+
+.logo-image img {
+  width:100%;
+}
+.sideNav {
+  padding-top:50px;
+  
+}
+.main-nav>li>a {
+  font-family: PingFangSC-Regular;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+.main-nav>li {
+  padding-left:50px;
+  margin-bottom:10px;
+  text-align: left;
+  line-height:30px;
+}
+.sub-nav>li>a {
+  opacity: 0.5;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #FFFFFF;
+  letter-spacing: 0px;
+}
+
+.search {
+  width:140px;
+  position:relative;
+  left:50%;
+  transform: translateX(-50%);
+  color:red;
+}
+.search input {
+  background:transparent;
+  outline:none;
+  border:1px solid #fff;
+  width:140px;
+  height:34px;
+  border-radius:17px;
+  opacity: 0.5;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+  color:#fff !important;
+  padding:0 40px;
+}
+.search button {
+  background:transparent;
+  outline:none;
+  border:none;
+  position:absolute;
+  left:0;
+  height:34px;
+}
+.search li a{
+  color:#ccc;
+}
+/*侧栏导航指示物*/
+.sub-nav {
+  position:relative;
+}
+.main-nav ul {
+  display:none;
+}
+.sub-nav>li:last-child {
+  position:absolute;
+  top:0;
+  left:-30px;
+}
+/*goback*/
+.backTop {
+  position:fixed;
+  right:20px;
+  bottom:80px;
+  display:none;
+}
+.backTop img {
+  width:30px;
+  height:30px;
+}
+/*详情页右边部分*/
+
+.col-sm-10 {
+  padding-left:15px;
+}
+.sch-detail {
+  position:relative;
+}
+.sch-det-img {
+  width:100%;
+}
+.sch-dir {
+  position:absolute;
+  bottom:40px;
+  left:200px;
+  text-align:center;
+}
+.sch-dir .arrow {
+  -webkit-transform:translateY(10px);
+  -moz-transform:translateY(10px);
+  -ms-transform:translateY(10px);
+  -o-transform:translateY(10px);
+  transform:translateY(10px);
+  animation: arrow 2s linear infinite;
+}
+@keyframes arrow {
+  0%{-webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  transform: translateY(0px);}
+  50%{-webkit-transform: translateY(20px);
+  -moz-transform: translateY(20px);
+  -ms-transform: translateY(20px);
+  -o-transform: translateY(20px);
+  transform: translateY(20px);}
+  100%{-webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  transform: translateY(0px);}
+
+}
+/*学校文字介绍*/
+.col-sm-offset-3 h3 {
+  font-family: PingFangSC-Light;
+  font-size: 20px;
+  color: #3D3D3D;
+  letter-spacing: 0px;
+  padding-bottom:50px;
+  padding-top:30px;
+}
+.col-sm-offset-3 p {
+  font-family: PingFangSC-Light;
+  font-size: 20px;
+  color: #3D3D3D;
+  letter-spacing: 0px;
+}
+
+.footer{
+  height:60px;
+  line-height:60px;
+  text-align:center;
+  background:#4F5F7C;
+}
+.footer .col-sm-4 {
+  padding-top:0px;
+  padding-bottom:0px;
+  text-align: center;
+}
+.footer a {
+  margin:0 25px;
+}

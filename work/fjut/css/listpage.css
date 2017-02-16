@@ -1,0 +1,166 @@
+.clearfix:after {
+  content:"";
+  visibility:hidden;
+  height:0;
+  zoom:1;
+  display:block;
+  clear:both;
+}
+/*
+img {
+	width:100%;
+}
+*/
+ul li {
+  list-style:none;
+}
+ul {
+  padding:0;
+  margin:0;
+}
+body,html {
+  height:100%;
+}
+.container-fluid {
+  height:100%;
+}
+
+.col-sm-2 {
+  position:fixed;
+  padding-left:0;
+  padding-right:0;
+  height:100%;
+  text-align:center;
+  background:#272e4a;
+}
+/*bootstrap 自身就是媒体查询 再用问题查询应该放在其下面*/
+@media only screen and (max-width:768px) {
+  .col-sm-2 {
+    position:relative;
+    padding-right:0;
+  }
+}
+.col-sm-10 {
+  height:100%;
+  padding-left:30px;
+}
+
+.logo-image img {
+  width:100%;
+}
+.sideNav {
+  padding-top:50px;
+  /*background-image: linear-gradient(-180deg, #E3E3E3 0%, #DBDBDB 47%, rgba(215,215,215,0.00) 100%);*/
+}
+.main-nav>li>a {
+  font-family: PingFangSC-Regular;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+.main-nav>li {
+  padding-left:50px;
+  margin-bottom:10px;
+  text-align: left;
+  line-height:30px;
+}
+.sub-nav>li>a {
+  opacity: 0.5;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #FFFFFF;
+  letter-spacing: 0px;
+}
+
+.search {
+  width:140px;
+  position:relative;
+  left:50%;
+  transform: translateX(-50%);
+}
+.search input {
+ background:transparent;
+  outline:none;
+  border:1px solid #fff;
+  width:140px;
+  height:34px;
+  border-radius:17px;
+  opacity: 0.5;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color:#fff !important;
+  padding:0 40px;
+}
+.search button {
+  background:transparent;
+  outline:none;
+  border:none;
+  position:absolute;
+  left:0;
+  height:34px;
+}
+.search li a{
+  color:#ccc;
+}
+/*右边部分*/
+.sch-img img {
+	width:100%;
+}
+.col-sm-4 {
+  padding-top:50px;
+  padding-bottom:50px;
+}
+.col-sm-4 span {
+  display:block;
+  width:30px;
+  height:2px;
+  background:#91A562;
+}
+.col-sm-4 p {
+  line-height:26px;
+  opacity: 0.68;
+  font-family: HelveticaNeue;
+  font-size: 14px;
+  color: #05293D;
+}
+.col-sm-4 h3 a {
+  font-family: PingFangSC-Regular;
+  font-size: 18px;
+  color: #05293D;
+}
+/*goback*/
+.backTop {
+  position:fixed;
+  right:20px;
+  bottom:80px;
+  display:none;
+}
+.backTop img {
+  width:30px;
+  height:30px;
+}
+/*底部*/
+.footer{
+  margin-left:-30px;
+  height:60px;
+  line-height:60px;
+  text-align:center;
+  background:#4F5F7C;
+}
+.footer .col-sm-4 {
+  padding-top:0px;
+  padding-bottom:0px;
+  text-align: center;
+}
+.footer a {
+  margin:0 25px;
+}
+
+/*侧栏导航指示物*/
+.sub-nav {
+  position:relative;
+}
+.sub-nav>li:last-child {
+  position:absolute;
+  top:0;
+  left:-30px;
+}

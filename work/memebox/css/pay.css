@@ -1,0 +1,305 @@
+.container {
+	width:100%;
+	height:100%;
+}
+.header {
+	width:100%;
+	height:30px;
+	background-color:#ff5073;
+}
+.header span {display:inline-block;
+	background:url(../img/common/header_sprite.png) no-repeat;
+}
+.header-top-container {
+	width:1172px;
+	padding:0 14px;
+	margin:0 auto;
+}
+.header-top-left {
+	float:left;
+}
+.header-top-right {
+	float:right;
+}
+.header-top-left li {
+	float:left;
+	line-height:30px;
+	color:#ffffff;
+	cursor:pointer;
+}
+.header-top-left .icon-heart {width:15px;
+	height:12px;
+	background-position:0 0;
+	vertical-align: text-top;
+}
+.header-top-left .icon-punch {
+	width:18px;
+	height:18px;
+	background-position:0 -16px;
+	vertical-align:middle;
+	margin-top:-2px;
+}
+.header-top-right {
+	height:30px;
+}
+.header-top-right li {
+	float:left;
+	line-height:30px;
+	color:#ffffff;
+	margin-right:16px;
+	cursor:pointer;position:relative;
+}
+.header-top-right .icon-phone {
+	width:18px;
+	height:18px;
+	background-position:0 -37px;
+	vertical-align:middle;
+    margin-top:-2px;
+}
+.header-top-right .icon-service {
+	width:18px;
+	height:18px;
+	background-position:0 -57px;
+	vertical-align:middle;
+	margin-top:-2px;
+	margin-right:3px;
+}
+.header-top-right li a {
+	color:#ffffff;
+}
+.left-item1, .sign-in {
+	margin-right:10px;
+	font-style:normal;
+}
+.sign-in:hover {
+	text-decoration:underline;
+}
+/*支付主体部分*/
+.main {
+	padding-top:10px;
+	padding-bottom:30px;
+	width:100%;
+}
+.main-container {
+	width:1172px;
+	margin:0 auto;
+}
+.main-banner {
+	width:98%;
+	margin-left:1%;
+	margin-right:1%;
+	padding-bottom:20px;
+}
+.main-banner .logo {
+	float:left;
+	height:50px;
+}
+.main-banner .logo a {
+	display:block;
+	margin-top:7px;
+}
+.pay-progress{
+	float:right;
+}
+.pay-progress li { 
+	float:left;
+}
+.pay-progress span{
+	display:block;
+	width:22px;
+	height:22px;
+	/*background:#ff738f;*/
+	text-align:center;
+	line-height:22px;
+	margin:0 auto;
+/*	color:#fff;*/
+	-webkit-border-radius:11px;
+	-moz-border-radius:11px;
+	-ms-border-radius:11px;
+	-o-border-radius:11px;
+	border-radius:11px;
+}
+.pay-progress div {
+	font-size:13px;
+	color:#666;
+	width:65px;
+	text-align:center;
+}
+.pay-progress .progress1,.pay-progress .progress3 {
+	width:110px;
+	position:relative;
+}
+.pay-progress .progress2 {
+	position:relative;
+	width:170px;
+}
+.pay-progress .progress1 span {
+	background:#ff738f;
+	color:#fff;
+	margin-left:21px;
+	margin-right:21px;
+}
+.pay-progress .progress2 span {
+	background:#ddd;
+	color:#fff;
+	margin-left:53px;
+	margin-right:53px;
+}
+.pay-progress .progress2 div {
+	margin-left:32px;
+}
+.pay-progress .progress3 span {
+	background:#ddd;
+	color:#fff;
+	margin-left:21px;
+	margin-right:21px;
+}
+.pay-progress .progress2 i{
+	display:block;
+	position:absolute;
+	left:0;
+	width:130px;
+	height:4px;
+	background:#ddd;
+	top:8px;
+	left:-70px;
+	z-index:-1;
+}
+.pay-progress .progress3 i{
+	display:block;
+	position:absolute;
+	left:0;
+	width:130px;
+	height:4px;
+	background:#ddd;
+	top:8px;
+	left:-100px;
+	z-index:-1;
+}
+/*购物车列表*/
+table {
+	width:100%;
+	border-collapse: collapse;
+	/*border:1px solid #ccc;*/
+}
+table th,table td {
+	padding:10px;
+	font-size:14px;
+	text-align:center;
+}
+.t-one,.t-two,.t-three {
+	border:1px solid #ccc;
+	color:#666;
+	font-size:14px;
+}
+.t-one {
+	background:#f5f5f5;
+}
+.t-one th{
+	font-weight:normal;
+}
+.t-one th:nth-child(1){
+	text-align:left;
+}
+.t-one th:nth-child(1) i {
+	display:inline-block;
+	height:20px;
+	width:18px;
+	background:url(../img/pay/pay-sprite.png) no-repeat;
+	background-position:0 -60px;
+	vertical-align: middle;
+}
+.t-one .store {
+	font-size:18px;
+}
+.t-one .tip {
+	margin-left:10px;
+}
+.t-two td:nth-child(1) {
+	text-align:left;
+}
+.t-two .good1 {
+	float:left;
+	margin-right:20px;
+}
+.t-two .good1 img {
+	width:75px;
+	height:75px;
+}
+.t-two td:nth-child(1) div {
+	width:334px;
+	font-size:13px;
+}
+.t-two td .add,.t-two td .reduce {
+	width:17px;
+	height:22px;
+	padding:1px 0;
+	border:1px solid #e5e5e5;
+	background:#fff;
+	outline:none;
+	cursor:pointer;
+}
+.t-two td .reduce{
+	border-right:none;
+}
+.t-two td .add {
+	border-left:none;
+}
+.t-two td input {
+	width:44px;
+	height:20px;
+	border:1px solid #e5e5e5;
+	text-align:center;
+	outline:none;
+}
+.t-two .del:hover {
+	color:#ff5073;
+}
+.t-two .collection: {
+	color:#ff5073;
+}
+.t-three td div {
+	float:right;
+	padding:15px 30px;
+}
+.t-three td div .amount {
+	color:#ff5073;
+	font-size:20px;
+}
+/*去结算*/
+.account {
+	margin-top:60px;
+	width:100%;
+	height:60px;
+	background:#f5f5f5;
+	border:1px solid #ccc;
+}
+.account-right {
+	float:right;
+}
+.account-right div,.account-right a {
+	float:left;
+}
+.account-right div {
+	padding:15px 30px;
+	font-size:14px;
+	color:#333;
+}
+.account-right div .account-price {
+	color:#ff5073;
+	font-size:28px;
+	line-height:30px;
+}
+.account-right a {
+	display:block;
+	color:#fff;
+	background:#ff5073;
+	font-size:18px;
+	padding:15px 30px;
+	line-height:30px;
+	width:120px;
+	text-align:center;
+}
+.account-right a:hover {
+	background:#ec4c6c;
+}

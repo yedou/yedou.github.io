@@ -1,0 +1,121 @@
+html,body {
+	width:100%;
+}
+.container {
+	width:100%;
+}
+.header {
+	width:100%;
+	border-bottom:1px solid #ddd;
+}
+.header .logo {
+	padding-top:36px;
+	width:1172px;
+	margin:0 auto;
+	height:64px;
+}
+.header .logo img {
+	display:block;
+	margin-bottom:36px;
+}
+.main {
+	width:100%;
+	height:520px;
+	background:url(../img/regist/main_bg.jpg) repeat-x 0 0;
+}
+.main-content {
+	width:100%;
+	height:520px;
+	position:relative;
+}
+.regist {
+	background:#fff;
+	float:right;
+	margin-top:50px;
+	margin-right:30px;
+}
+.regist .content {
+	padding:30px;
+	padding-bottom:0px;
+}
+.regist-title {
+	margin-bottom:38px;
+}
+.regist-title a {
+	float:right;
+	color:#3d86f4;
+	font-size:14px;
+}
+.regist-title span {
+	font-size:18px;
+}
+.content .userName,.content .pwd,.verification {
+	/*height:50px;*/
+	width:350px;
+	margin-bottom:15px;
+}
+.content .userName div,.content .pwd div {
+	color:#ee001c;
+	height:20px;
+	text-align:left;
+	font-size:14px;
+	display:none;
+	opacity:0;
+	filter:alpha(opacity=0);
+}
+.content .userName input,.content .pwd input {
+	height:22px;
+	width:332px;
+	font-size:14px;
+	color:#888;
+	border:1px solid #ddd;
+	outline:none;
+	padding:8px;
+}
+.regist-btn {
+	margin-bottom:15px;
+}
+.regist-btn input {
+	width:350px;
+	height:40px;
+	text-align:center;
+	line-height:40px;
+	background:#ff5073;
+	font-size:20px;
+	color:#fff;
+	border:none;
+	outline:none;
+	cursor:pointer;
+}
+.regist .content p {
+	text-align:right;
+	font-size:13px;
+	margin-bottom:20px;
+}
+.thirdparty {
+	height:50px;
+	border:1px solid #dcdcdc;
+}
+.thirdparty span {
+	display:inline-block;
+	height:50px;
+	line-height:50px;
+	margin-left:30px;
+	font-size:14px;
+}
+.thirdparty a.wechat,.thirdparty a.sina,.thirdparty a.qq {
+	margin-top:13px;
+	margin-left:30px;
+	display:inline-block;
+	height:24px;
+	width:30px;
+}
+.thirdparty a.wechat {
+	background:url(../img/regist/wechat.png) no-repeat 0 0;
+}
+.thirdparty a.sina {
+	background:url(../img/regist/sina.png) no-repeat 0 0;
+}
+.thirdparty a.qq {
+	background:url(../img/regist/qq.png) no-repeat 0 0;
+}

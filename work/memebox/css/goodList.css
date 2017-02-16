@@ -1,0 +1,224 @@
+.main {
+	width:1172px;
+	margin:0 auto;
+}
+.main .main-container {
+	width:98%;
+	margin-left:1%;
+	margin-right:1%;
+}
+.main-container .banner {
+	margin:20px 0;
+}
+.main-container .sorter {
+	height:48px;
+	padding:5px 0;
+	border-top:1px solid #eaeeae;
+	border-bottom:1px solid #eaeaea;
+}
+.sorter p {
+	float:left;
+	height:38px;
+	padding:5px 10px 5px 0;
+	margin-right:10px;
+	font-size:13px;
+	line-height:38px;
+	background:url(../img/goodList/sort_line.png) no-repeat center right;
+}
+.sorter div {
+	float:left;
+	height:38px;
+	padding:5px 3px 5px 0;
+	font-size:13px;
+	line-height:38px;
+	background:url(../img/goodList/sort_line.png) no-repeat center right;
+}
+.sorter div select {
+	padding:8px;
+	cursor:pointer;
+	color:#888;
+	ouease
+}
+.sorter div select:hover {
+	color:#000;
+}
+.sorter div a {
+	width:30px;
+	height:30px;
+	display:inline-block;
+	background:url(../img/goodList/goodList_sprite.png) no-repeat;
+	background-position:0 -87px;
+	vertical-align:middle;
+}
+.sorter div a:hover {
+	background:#000 url(../img/goodList/goodList_sprite.png) no-repeat;
+	background-position:-30px -87px;
+	transition:all 0.3s ease;
+	-o-transition:all 0.3s ease;
+	-ms-transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	-webkit-transition:all 0.3s ease;
+}
+.productor li {
+	position:relative;
+	width:23%;
+	border-bottom:1px solid #eaeaea;;
+	padding-left:1%;
+	padding-right:1%;
+	padding-top:2%;
+	padding-bottom:70px;
+	float:left;
+}
+.productor li:nth-child(4n+1) {
+	clear:left;
+}
+.productor li img {
+	width:100%;
+}
+.productor li:hover {
+	box-shadow: 0 0 20px #ccc;
+	padding-left:2%;
+	padding-right:2%;
+	margin-left:-1%;
+	margin-right:-1%;
+	z-index:2;
+	-webkit-transition:all 0.2s ease-in;
+	-moz-transition:all 0.2s ease-in;
+	-ms-transition:all 0.2s ease-in;
+	-o-transition:all 0.2s ease-in;
+	transition:all 0.2s ease-in;
+}
+.productor li .good-icon {
+	position:absolute;
+	height:42px;
+	width:42px;
+	background:url(../img/goodList/good-icon.png) no-repeat;
+}
+.productor li h2 {
+	margin-top:20px;
+	font-weight:normal;
+	text-align:center;
+}
+.productor li h2 a {
+	font-size:18px;
+	color:#333;
+}
+.productor li h2 a:hover {
+	color:#ff5073;
+	-webkit-transition:all 0.2s ease-in;
+	-moz-transition:all 0.2s ease-in;
+	-ms-transition:all 0.2s ease-in;
+	-o-transition:all 0.2s ease-in;
+	transition:all 0.2s ease-in;
+}
+.productor li h2 span {
+	font-size:15px;
+}
+.productor li .price-box {
+	height:52px;
+	font-size:14px;
+	text-align:center;
+	margin-top:5px 0 10px;
+}
+.productor li .price-box .price-old {
+	height:21px;
+	margin-top:10px;
+	line-height:21px;
+	color:#aaa;
+	text-decoration:line-through;
+}
+.productor li .price-box .price-now {
+	height:21px;
+	margin-top:10px;
+	line-height:21px;
+	color:#ff5073;
+}
+.productor li  .buy {
+	height:45px;
+	margin-top:10px;
+	text-align:center;
+}
+.productor li .buy button {
+	width:110px;
+	height:45px;
+	background:#eee;
+	border:none;
+	outline:none;
+	cursor:pointer;
+}
+.productor li .buy button:hover {
+	background:#ff5073;
+	color:#fff;
+	-webkit-transition:all 0.2s ease-in;
+	-moz-transition:all 0.2s ease-in;
+	-ms-transition:all 0.2s ease-in;
+	-o-transition:all 0.2s ease-in;
+	transition:all 0.2s ease-in;
+}
+/*分页指标*/
+.pager {
+	height:46px;
+	padding:5px 0;
+	position:relative;
+}
+.pager .pager-list {
+	height:36px;
+	padding:5px 0;
+	margin-left:50%;
+	width:222px;
+	position:relative;
+	left:-111px;
+}
+.pager-list strong {
+	float:left;
+	font-weight:normal;
+	font-size:13px;
+	line-height:36px;
+	color:#333;
+	vertical-align:center;
+	margin-right:10px;
+}
+.pager-list ol {
+	float:left;
+}
+.pager-list ol li {
+	float:left;
+	width:30px;
+	height:30px;
+	margin-right:1px;
+	text-align:center;
+	line-height:30px;
+	background:#f5f5f5;
+}
+.pager-list ol li.current a {
+	background:#888;
+}
+.pager-list ol li a {
+	width:30px;
+	height:30px;
+	display:block;
+}
+.pager-list ol li.next a {
+	background:url(../img/goodList/slider-arrows.png) no-repeat;
+	background-position:-60px -10px;
+}
+.pager-list ol li.active>a {
+	color:#fff;
+	-webkit-transition:all 0.2s ease;
+	-moz-transition:all 0.2s ease;
+	-ms-transition:all 0.2s ease;
+	-o-transition:all 0.2s ease;
+	transition:all 0.2s ease;
+}
+.pager-list ol li.active {
+	background:#000;
+	-webkit-transition:all 0.2s ease;
+	-moz-transition:all 0.2s ease;
+	-ms-transition:all 0.2s ease;
+	-o-transition:all 0.2s ease;
+	transition:all 0.2s ease;
+}
+.classify-container {
+	display:none;
+}
+

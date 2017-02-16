@@ -1,0 +1,381 @@
+.header {
+	width: 100%;
+}
+
+.header span {
+	display: inline-block;
+	background: url(../../img/common/header_sprite.png) no-repeat;
+}
+
+.header-top {
+	width: 100%;
+	height: 30px;
+	background-color: #ff5073;
+}
+
+.header-top-container {
+	width: 1172px;
+	padding: 0 14px;
+	margin: 0 auto;
+}
+
+.header-top-left {
+	float: left;
+}
+
+.header-top-right {
+	float: right;
+}
+
+.header-top-left li {
+	float: left;
+	line-height: 30px;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.header-top-left .icon-heart {
+	width: 15px;
+	height: 12px;
+	background-position: 0 0;
+	vertical-align: text-top;
+}
+
+.header-top-left .icon-punch {
+	width: 18px;
+	height: 18px;
+	background-position: 0 -16px;
+	vertical-align: middle;
+	margin-top: -2px;
+}
+
+.header-top-right li {
+	float: left;
+	line-height: 30px;
+	color: #ffffff;
+	margin-right: 16px;
+	cursor: pointer;
+	position: relative;
+}
+
+.header-top-right .downloadApp {
+	z-index: 4000;
+	position: absolute;
+	width: 154px;
+	top: 35px;
+	height: 105px;
+	left: -100px;
+	padding-left: 102px;
+	background: url(../../img/common/header_sprite.png) no-repeat 0 -192px;
+}
+
+.header-top-right .icon-arrowTop {
+	width: 12px;
+	height: 6px;
+	background: url(../../img/common/header_sprite.png) no-repeat;
+	background-position: 0 -78px;
+	position: absolute;
+	left: 112px;
+	top: -6px;
+}
+
+.header-top-right .qrcode {
+	height: 80px;
+	width: 80px;
+	background: url(../../img/common/qrdownloadcode.png) 0 0 no-repeat;
+	background-size: cover;
+	border: 2px solid #ff5073;
+	border-radius: 2px;
+}
+
+.header-top-right .icon-phone {
+	width: 18px;
+	height: 18px;
+	background-position: 0 -37px;
+	vertical-align: middle;
+	margin-top: -2px;
+}
+
+.header-top-right .icon-service {
+	width: 18px;
+	height: 18px;
+	background-position: 0 -57px;
+	vertical-align: middle;
+	margin-top: -2px;
+	margin-right: 3px;
+}
+
+.header-top-right li a {
+	color: #ffffff;
+}
+
+.left-item1,
+.sign-in {
+	margin-right: 10px;
+	font-style: normal;
+}
+
+.sign-in:hover {
+	text-decoration: underline;
+}
+
+.header-container {
+	width: 100%;
+	height: 90px;
+	border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+.header-containerInner {
+	width: 1172px;
+	padding: 14px;
+	margin: 0 auto;
+	padding: 20px 0;
+	height: 50px;
+}
+
+.logo {
+	float: left;
+	padding: 7px 0;
+	width: 285px;
+}
+
+.logo img {
+	display: block;
+}
+
+.search {
+	float: left;
+	margin: 6px 0 0 60px;
+	width: 422px;
+}
+
+.header-container form {
+	position: relative;
+}
+
+.form-container {
+	width: 422px;
+	height: 36px;
+	border: 1px solid #ff5073;
+	border-radius: 18px;
+	position: relative;
+}
+
+.form-menu {
+	position: absolute;
+	top: 40px;
+	width: 392px;
+	background: #fff;
+	z-index: 200;
+	padding-left: 30px;
+}
+
+.form-menu ul li {
+	font-size: 14px;
+	height: 30px;
+	line-height: 30px;
+	color: #666;
+}
+
+.form-container input {
+	height: 36px;
+	width: 313px;
+	padding: 0 10px 0 7px;
+	line-height: 36px;
+	margin-left: 18px;
+	border: none;
+	outline: none;
+	font-size: 18px;
+	float: left;
+}
+
+.form-container .button {
+	width: 40px;
+	float: left;
+	height: 36px;
+	position: absolute;
+	right: 8px;
+	border: none;
+	outline: none;
+	background: none;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.form-container .icon-delete {
+	width: 15px;
+	height: 15px;
+	display: none;
+	text-align: center;
+	float: left;
+	margin-top: 12px;
+	cursor: pointer;
+	background-position: 0 -138px;
+}
+
+.form-container .icon-delete:hover {
+	background-position: 0 -158px;
+}
+
+.form-container .icon-search {
+	display: inline-block;
+	width: 40px;
+	height: 22px;
+	background-position: 10px -88px;
+	margin-top: 6px;
+}
+
+.header-nav {
+	width: 100%;
+	height: 44px;
+	border-bottom: 1px solid #dddddd;
+}
+
+.header-nav #nav {
+	width: 1172px;
+	height: 44px;
+	margin: 0 auto;
+}
+
+.header-nav #nav > li {
+	height: 29px;
+	padding-top: 15px;
+	float: left;
+	position: relative;
+	cursor: pointer;
+}
+
+.header-nav .item0 {
+	padding: 15px 24px 0 10px;
+	background: #f2f2f2;
+}
+
+.header-nav #nav .item-sub {
+	position: absolute;
+	top: 44px;
+	left: 0px;
+	z-index: 1000;
+	background: #fff;
+	border-right: 5px solid rgba(0, 0, 0, 0.1);
+	width: 208px;
+	padding: 10px 16px 0;
+	display: none;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+.header-nav #nav .item-sub a {
+	line-height: 30px;
+	font-size: 14px;
+	color: #666;
+	display: block;
+	height: 30px;
+}
+
+.header-nav .item1 a {
+	color: #ff5073;
+}
+
+.header-nav #nav a:hover {
+	color: #ff5073;
+}
+
+.header-nav .icon-classify {
+	display: inline-block;
+	width: 20px;
+	height: 14px;
+	background: url(../../img/common/classify.png) no-repeat;
+	vertical-align: middle;
+	margin-top: -2px;
+	margin-right: 6px;
+}
+
+.header-nav .icon-hot {
+	width: 30px;
+	height: 15px;
+	position: absolute;
+	background-position: 0 -322px;
+	top: 4px;
+	right: 8px;
+}
+
+.header-nav .icon-new {
+	width: 30px;
+	height: 15px;
+	position: absolute;
+	background-position: 0 -430px;
+	top: 4px;
+	right: 8px;
+}
+
+.header-nav #nav > li > a {
+	display: block;
+	height: 29px;
+	padding: 0 18px;
+	line-height: 29px;
+	font-size: 16px;
+}
+
+.header-nav .classify-container {
+	position: absolute;
+	width: 160px;
+	height: 480px;
+	top: 45px;
+	left: 0px;
+	font-size: 14px;
+	background: rgba(3, 3, 3, 0.5);
+	z-index: 999;
+}
+
+.header-nav .classify-container .ul1 > li {
+	width: 124px;
+	height: 40px;
+	padding: 10px 0 0 36px;
+	float: none;
+}
+
+.header-nav .classify-container .ul1 > li:hover {
+	background: #fff;
+}
+
+.header-nav .classify-container .ul1 > li:hover a {
+	color: #ff5073;
+}
+
+.header-nav .classify-container .ul1 > li:hover ul li a {
+	color: #666;
+}
+
+.header-nav .classify-container .ul1 > li p {
+	height: 40px;
+	line-height: 40px;
+}
+
+.header-nav .classify-container .ul1 > li a {
+	color: #fff;
+	font-size: 14px;
+}
+
+.classify-container .sub-classify {
+	position: absolute;
+	left: 160px;
+	top: 0px;
+	background: #fff;
+	width: 172px;
+	height: 482px;
+	border-right: 5px solid rgba(0, 0, 0, 0.1);
+	display: none;
+}
+
+.header-nav .classify-container .sub-classify li a {
+	color: #666;
+	display: block;
+	height: 40px;
+	line-height: 40px;
+}
+
+.header-nav .classify-container .sub-classify li {
+	height: 40px;
+	padding: 10px 0 0 36px;
+	float: none;
+}

@@ -1,0 +1,466 @@
+/**{margin:0;padding:0;}*/
+html,body{height:100%;width:100%;overflow:hidden;}
+@media only screen and (max-width:768px) {
+    html,body {overflow:visible;}
+}
+a:hover,a:active,a:visited,a:link{text-decoration:none;}
+/*中文字体*/
+@font-face {
+    font-family: 'mf';
+    
+    src:
+         url('../fonts/mf.otf') format('opentype');
+         
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: "PingFang_Light";
+    src: url("../fonts/PingFang_Light.eot"); /* IE9 */
+    src: url("../fonts/PingFang_Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/PingFang_Light.woff") format("woff"), /* chrome, firefox */
+    url("../fonts/PingFang_Light.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("../fonts/PingFang_Light.svg#PingFang_Light") format("svg"); /* iOS 4.1- */
+    
+}
+@font-face {
+    font-family: "pf_tx";
+    src: url("../fonts/pf_tx.eot"); /* IE9 */
+    src: url("../fonts/pf_tx.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/pf_tx.woff") format("woff"), /* chrome, firefox */
+    url("../fonts/pf_tx.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("../fonts/pf_tx.svg#pf_xiti") format("svg"); /* iOS 4.1- */
+    
+}
+@font-face {
+    font-family: "pf_xiti";
+    src: url("../fonts/pf_xiti.eot"); /* IE9 */
+    src: url("../fonts/pf_xiti.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/pf_xiti.woff") format("woff"), /* chrome, firefox */
+    url("../fonts/pf_xiti.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("../fonts/pf_xiti.svg#pf_xiti") format("svg"); /* iOS 4.1- */
+    
+}
+
+@font-face {
+    font-family: "_pingfangsc_light_pingfang";
+    src: url("../fonts/_pingfangsc_light_pingfang.eot"); /* IE9 */
+    src: url("../fonts/_pingfangsc_light_pingfang.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/_pingfangsc_light_pingfang.woff") format("woff"), /* chrome, firefox */
+    url("../fonts/_pingfangsc_light_pingfang.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("../fonts/_pingfangsc_light_pingfang#_pingfangsc_light_pingfang") format("svg"); /* iOS 4.1- */
+    
+}
+@font-face {
+    font-family: "PF_regular";
+    src: url("../fonts/PF_regularr.eot"); /* IE9 */
+    src: url("../fonts/PF_regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/PF_regular.woff") format("woff"), /* chrome, firefox */
+    url("../fonts/PF_regular.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("../fonts/PF_regular.svg#PF_regular") format("svg"); /* iOS 4.1- */
+    
+}
+
+/*英文字体*/
+@font-face {
+    font-family: 'FuturaPTCondBook';
+    
+    src:
+         url('../fonts/FuturaPTCondBook.otf') format('opentype');
+         
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PeponeLight-Italic';
+    
+    src:
+         url('../fonts/PeponeLight-Italic.otf') format('opentype');
+         
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'Pepone';
+    
+    src:
+         url('../fonts/Pepone.otf') format('opentype');
+         
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'PeponeLight';
+    
+    src:
+         url('../fonts/PeponeLight.otf') format('opentype');
+         
+    font-weight: normal;
+    font-style: normal;
+
+}
+.clearfix:after {content:"";display:block;visibility:hidden;clear:both;line-height:0;height:0;}
+.clearfix {*zoom:1;}
+/*实现滚轮左右滑动*/
+#wrap {height:100%;width:300%;position:relative;left:0;top:0;}
+@media only screen and (max-width:768px) {
+    #wrap {width:100%;height:auto;padding-top:150px;}
+}
+.section {height:100%;display:table;float:left;width:100%;}
+@media only screen and (max-width:768px) {
+    .section {float:none;}
+}
+.section>div {display:table-cell;vertical-align: middle;}
+/*导航条样式*/
+#menu {background:#fff;}
+@media only screen and (max-width:768px) {
+    
+    .navbar-toggle {margin-top:29px;}
+}
+.navbar {border:none;}
+
+.navbar-brand {height:100px;}
+
+@media only screen and (max-width:768px) {
+    #bs-example-navbar-collapse-1 {border-bottom:1px solid #e9e9e9;
+    }
+    .navbar-header {border-bottom:1px solid #e9e9e9;}
+}
+.navbar-nav li a {line-height:70px; width:80px;text-align:center;margin:0 30px;font-family: "PF_regular";font-size:20px;padding:10px 0;color:#000;}
+@media only screen and (max-width:768px) {
+    .navbar-nav li a {line-height:0px;padding:20px 0;text-align:left;}
+}
+.navbar-nav li a.PF_regular {
+    font-family: "Pepone";
+}
+.navbar-nav{position:relative;}
+.navbar-nav .active-line{width:80px;height:1px;background:#000;position:absolute;top:70px;
+margin-left:30px;}
+@media only screen and (max-width:768px) {
+    .navbar-nav .active-line {display:none;}
+    
+    
+}
+/*中英文切换*/
+
+	.box {
+  position: absolute;
+  perspective: 600px;
+}
+.box .front, .box .back {
+  position: absolute;
+  left:25px;
+   
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transition: all 0.5s ease-in-out;
+}
+@media only screen and (max-width:768px) {
+    .box .front, .box .back {
+        bottom:10px;
+        left:0;
+    }
+}
+.box .front {
+  z-index: 900;
+  transform: rotateX(0deg);
+}
+.box .back {
+  z-index: 800;
+  transform: rotateX(-180deg);
+}
+
+.flip .front {
+  transform: rotateX(180deg);
+  z-index: 900;
+}
+.flip .back {
+  transform: rotateX(0deg);
+  z-index: 1000;
+}
+/*nav从左到右*/
+@keyframes line1 {
+	0% {width:80px;left:0px;}
+	50% {width:220px;left:0px;}
+	100% {width:80px;left:140px;}
+}
+@keyframes line2 {
+	0% {width:80px;left:140px;}
+	50% {width:220px;left:140px;}
+	100% {width:80px;left:280px;}
+}
+@keyframes line3 {
+	0% {width:80px;left:0px;}
+	50% {width:360px;left:0px;}
+	100% {width:80px;left:280px;}
+}
+/*nav从右到左*/
+@keyframes line01 {
+	0% {width:80px;right:170px;}
+	50% {width:220px;right:170px;}
+	100% {width:80px;right:310px;}
+}
+@keyframes line02 {
+	0% {width:80px;right:170px;}
+	50% {width:360px;right:170px;}
+	100% {width:80px;right:450px;}
+}
+@keyframes line00 {
+	0% {width:80px;right:310px;}
+	50% {width:220px;right:310px;}
+	100% {width:80px;right:450px;}
+}
+.navbar-brand {vertical-align:bottom;padding-top:29px;}
+.section {background:#fff;}
+/*个人简介样式*/
+.page1 h1 {
+    margin-left:-6px;
+    font-family: "mf";
+	font-size:100px;
+	color:#000;
+	letter-spacing:10px;
+}
+.page1 h1.mf {
+    font-family: "FuturaPTCondBook";
+}
+.page1 h3 {
+    
+    height:50px;
+    font-family: "pf_tx";
+	font-size:36px;
+	color:#000;
+	
+}
+.page1 h3.PingFang_Light {
+    font-family: "PeponeLight-Italic";
+}
+.page1 .txt-rotate,.page1 .wrap {
+    display:inline-block;
+    height:50px;
+}
+.page1 .typing {
+    position:relative;
+    display:inline-block;
+    top:4px;left:4px;
+    height:46px;
+    width:8px;
+    background:#B86439;
+    animation: typing 0.4s infinite;
+
+}
+@keyframes typing {
+    0% {opacity:0;};
+    100% {opacity: 1;}
+}
+.page1 p {
+    font-family: "pf_xiti";
+  
+	font-size:20px;
+	color:#000;
+	letter-spacing:2px;
+}
+.page1 p.PF_regular {
+    font-family: "Pepone";
+}
+.item1 {
+    padding-top:60px;
+}
+.item2 {
+    padding-top:25px;
+}
+.page1 .pdf {
+    font-family: "PF_regular";
+    display:block;
+    padding-top:70px;
+}
+.page1 .pdf.PF_regular {
+    font-family: "Pepone";
+}
+.page1 a {
+    font-family: "PF_regular";
+	font-size: 20px;
+	color: #B86439;
+	letter-spacing: 2px;
+}
+.page1 {
+	position:relative;
+}
+.page1 .work {
+	position:absolute;
+	right:0px;
+	top:50%;
+	margin-top:-40px;
+	z-index:1000;
+	width:186px;
+	height:80px;
+	background:#B86439;
+}
+@media only screen and (max-width:768px) {
+    .page1 .work {display:none;}
+}
+.work a {
+	display:block;
+	font-size:20px;
+	height:80px;
+	width:186px;
+	color:#fff;
+	text-align:center;
+	line-height:80px;
+	background:url(../assets/Combined_Shape.png) no-repeat 140px center;
+    font-family: "PF_regular";
+}
+.work a.PF_regular {
+    font-family: "Pepone";
+}
+/*作品样式*/
+.page2 .row {
+	padding:150px 30px;
+}
+.page2 .col-md-4 {
+	padding:10px;
+	position:relative;
+}
+.page2 .hover-box{
+    display: block;
+    height:100%;
+    width:100%;
+}
+.page2 .img-box {
+    filter: grayscale(0);
+    -webkit-filter:grayscale(0);
+    transition:all 0.2s ease-in-out;
+    width:100%;
+}
+.img-responsive {width:100%;}
+.page2 .hover-box:hover .img-box {
+    filter: grayscale(100%);
+    -webkit-filter:grayscale(100%);
+}
+.page2 .hover-box:hover .desc-box {
+    opacity:1;
+     filter:alpha(opacity=100);
+}
+.page2 .desc-box {
+    opacity:0;
+    filter:alpha(opacity=0);
+	padding:10px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	width:80%;
+	height:60%;
+	transform:translate(-50%,-50%);
+	background:#fff;
+    transition:all 0.2s ease-in-out;
+    -webkit-transition:all 0.2s ease-in-out;
+    
+}
+@media only screen and (max-width:768px) {
+    .page2 .desc-box {
+        min-width:300px;
+    }
+}
+
+.desc-box h2 {
+    font-family: "PF_regular";
+    color:#000;
+	font-size:28px;
+    padding-left:40px;
+	letter-spacing: 2.8px;
+}
+@media only screen and (max-width:768px) {
+    .desc-box h2 {
+    margin:0;
+    font-size:20px;
+    }
+}
+.img-responsive {display:block;}
+
+.desc-box li {
+    font-family: "PF_regular";
+    color:#000;
+	list-style:none;
+    padding-top:20px;
+    padding-left:-8px;
+	font-size:14px;
+}
+@media only screen and (max-width:768px) {
+    .desc-box li {
+        padding-top:0;
+        font-size:12px;
+    }
+}
+/*联系我*/
+.page3 dt {
+    font-family: "mf";
+	padding-top:20px;
+	font-size:48px;
+}
+
+@media only screen and (max-width:768px) {
+    .page3 dt {
+        text-align:center;
+        font-size:30px;
+    }
+}
+.page3 dt.PF_regular {
+    font-family: "FuturaPTCondBook";
+}
+.page3 dd {
+    font-family: "PingFang_Light";
+	font-size:24px;
+    color:#000;
+/*    font-weight:bold;*/
+    letter-spacing:2px;
+}
+@media only screen and (max-width:768px) {
+    .page3 dd {
+        text-align:center;
+        font-size:16px;
+    }
+}
+/*头像样式*/
+.page3 {
+	transform-style:preserve-3d;
+	transform:perspective(800px);
+}
+.avatar {
+	width:200px;
+	height:200px;
+	box-shadow:0 15px 50px rgba(184,100,57,0.4);
+	overflow:hidden;
+	position:relative;
+	border-radius:50%;
+}
+@media only screen and (max-width:768px) {
+    .avatar {
+        width:150px;
+        height:150px;
+        margin:0 auto;
+    }
+}
+.shine {
+	position:absolute;
+	top:0;right:0;bottom:0;left:0;
+	background:line-gradient:(90deg,rgba(255,255,255,.5) 0%,rgba(255,255,255,0) 60%);
+	z-index:100;
+}
+.layer-1 {
+	background-image:url(../assets/avatar.png);
+	background-repeat:no-repeat;
+	position:absolute;
+	background-size:100% 100%;
+	left:0;top:0;bottom:0;right:0;
+	background-position:0 0;
+	transition:0.1s;
+
+}

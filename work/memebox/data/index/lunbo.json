@@ -1,0 +1,58 @@
+{
+	"slider":["../img/index/slider1.jpg",
+			"../img/index/slider2.jpg",
+			"../img/index/slider3.jpg",
+			"../img/index/slider4.jpg",
+			"../img/index/slider5.jpg",
+			"../img/index/slider6.jpg",
+			"../img/index/slider7.jpg",	
+			"../img/index/slider8.jpg"],
+	"promotion":["../img/index/promotion1.jpg",
+				"../img/index/promotion2.jpg",
+				"../img/index/promotion3.jpg"],
+	"classify":{
+				"面膜":["贴片式面膜","免洗面膜","水洗面膜","撕拉面膜","其他"],
+				"洁面卸妆":["洁面乳","面部去角质/磨砂","洁面膏/皂/粉","洁面啫喱/慕斯/泡沫","卸妆","其他"],
+				"水乳/面霜/精华":["爽肤水","精华","乳液","面霜","其他"],
+				"美甲护甲":["指甲油","其他"],
+				"美护工具":["化妆刷","洁面工具","美甲工具","其他"]
+				},
+	"classifySub":{
+				"主页":[],
+				"尖货":[],
+				"面膜":["Leaders/Mediheal专区","Innisfree面膜专区","补水面膜专区","美白面膜专区","美白面膜专区","动物面膜专区"],
+				"新货":[],
+				"直邮":["直邮礼盒","韩国新品抢先购","韩国热卖套组专场","韩国免税店热卖","夏季护肤","夏季底妆","面膜","夏日大促","空姐推荐商品","Base Makeup Promtion"],
+				"礼盒":[],
+				"PONY":["PONY EFFECT","假日限量系列","PONY新品","PONY x MEMEBOX","超值套装"],
+				"美美妆":["美美妆热销产品","bonvivant","NOONI专区","I'M MEME","PONY EFFECT"],
+				"I'M MEME":["我爱眼妆","我爱唇妆","我爱底妆","我爱腮红","我爱气垫","我爱眉妆","我爱卸妆","我爱美甲","我爱工具"],
+				"K-BEAUTY STYLE":[]
+
+	}			
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,347 @@
+.sidebar {
+	position:fixed;
+	z-index:10000;
+	top:0;
+	right:0;
+	height:100%;
+}
+.sidebar-content {
+	width:40px;
+	height:100%;
+	background:rgba(3,3,3,0.5);
+}
+.sidebar .sidebar-center {
+	position:absolute;
+	top:50%;
+	margin-top:-200px;
+	text-align:center;
+}
+.sidebar-center .me-cart {
+	position:relative;
+	padding:10px 0;
+	margin-bottom:20px;
+	cursor:pointer;
+}
+.sidebar-center .me-cart .labelicon {
+	color:#fff;
+	background:#ed145b;
+	line-height:20px;
+	text-align:center;
+	margin-left:10px;
+	margin-top:10px;
+	display:block;
+	visibility:hidden;
+	width:20px;
+	height:20px;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	-ms-border-radius:10px;
+	-o-border-radius:10px;
+	border-radius:10px;
+}
+.sidebar-center .me-cart .cart{
+	display:block;
+	width:24px;
+	height:22px;
+	background:url(../../img/common/side_bar.png) no-repeat;
+	background-position:0 0;
+	margin-left:7px;
+
+}
+.sidebar-center .me-cart .cart-name {
+	width:16px;
+	line-height:16px;
+	color:#fff;
+	display:block;
+	margin-top:10px;
+	margin-left:12px;
+	font-size:14px;
+}
+.sidebar-center .me-login {
+	height:28px;
+	padding:5px 9px;
+	margin-bottom:5px;
+	position:relative;
+	cursor:pointer;
+}
+.sidebar-center .me-login a {
+	display:block;
+	height:20px;
+	width:22px;
+	background:url(../../img/common/side_bar.png) no-repeat;
+	background-position:-32px 0;
+}
+.sidebar-center .me-heart {
+	height:28px;
+	padding:5px 9px;
+	margin-bottom:5px;
+	position:relative;
+	cursor:pointer;
+}
+.sidebar-center .me-heart a {
+	display:block;
+	height:20px;
+	width:22px;
+	background:url(../../img/common/side_bar.png) no-repeat;
+	background-position:-59px 0;
+}
+.sidebar-center .me-list {
+	height:28px;
+	padding:5px 11px;
+	margin-bottom:5px;
+	position:relative;
+	cursor:pointer;
+}
+.sidebar-center .me-list a {
+	display:block;
+	height:20px;
+	width:18px;
+	background:url(../../img/common/side_bar.png) no-repeat;
+	background-position:-86px 0;
+}
+.sidebar .sidebar-bottom {
+	position:absolute;
+	bottom:0;
+	text-align:center;
+}
+.sidebar-bottom .me-support {
+	height:22px;
+	padding:8px 9px;
+	margin-bottom:5px;
+	position:relative;
+	cursor:pointer;
+}
+.sidebar-bottom .me-support a {
+	display:block;
+	height:22px;
+	width:22px;
+	background:url(../../img/common/side_bar.png) no-repeat;
+	background-position:-112px 0;
+}
+.sidebar-bottom .me-back {
+	height:25px;
+	padding:7px 7px 6px 8px;
+	position:relative;
+	cursor:pointer;
+	display:none;
+}
+.sidebar-bottom .me-back a {
+	display:block;
+	height:25px;
+	width:25px;
+	background:url(../../img/common/side_bar.png) no-repeat;
+	background-position:0px -29px;
+}
+.sidebar-center .tooltip,.sidebar-bottom .tooltip{
+	width:92px;
+	height:38px;
+	background:#666;
+	color:#fff;
+	text-align:center;
+	font-size:12px;
+	position:absolute;
+	top:0;
+	left:-120px;
+	line-height:38px;
+	display:none;
+}
+.sidebar-center .tooltip .tip-arrow,.sidebar-bottom .tooltip .tip-arrow{
+	position:absolute;
+	right:-12px;
+	top:13px;
+	display:block;
+	border:6px solid #666;
+	border-color:transparent;
+	border-left-color:#666;
+}
+.sidebar-center li:hover,.sidebar-bottom li:hover {
+	background:#ed145b;
+	transition:all 0.2s ease;
+	-o-transition:all 0.2s ease;
+	-ms-transition:all 0.2s ease;
+	-moz-transition:all 0.2s ease;
+	-webkit-transition:all 0.2s ease;
+}
+
+.fixedPerson {
+	position:fixed;
+	bottom:25px;
+	left:36px;
+	z-index:11111;
+}
+.fixedPerson .person-dl {
+	position:absolute;
+	width:181px;
+	top:-120px;
+	left:150px;
+	display:none;
+}
+.fixedPerson .close {
+	position:absolute;
+	display:none;
+	width:30px;
+	height:30px;
+	left:303px;
+	top:20px;
+}
+.fixedPerson .download {
+	position:absolute;
+	display:block;
+	width:150px;
+	height:40px;
+	left:16px;
+	top:154px;
+}
+/*侧边栏购物车*/
+.sidebar-cart {
+	border-left:5px solid rgba(0,0,0,0.1);
+	width:280px;
+	background:#fff;
+	min-height:100%;
+	position:absolute;
+	right:-325px;
+	z-index:-1;
+}
+.cart-header {
+	height:40px;
+	border-bottom:1px solid #ddd;
+	font-size:16px;
+	color:#030303;
+	padding:0 10px;
+	line-height:40px;
+}
+/*购物车关闭按钮*/
+.cart-close {
+	float:right;
+	display:inline-block;
+	height:16px;
+	width:16px;
+	background:url(../../img/pay/pay-sprite.png) no-repeat;
+	background-position:-32px -29px;
+	margin-top:10px;
+	margin-right:10px;
+	cursor:pointer;
+}
+.cart-content {
+	padding:0 10px;
+}
+.cart-type {
+	font-size:14px;
+	padding-top:10px;
+}
+.cart-list li {
+	padding:15px 0;
+	position:relative;
+	border-bottom:1px solid #ddd;
+}
+.cart-list li>div {
+	float:left;
+}
+.item-name {
+	margin-bottom:5px;
+	width:160px;
+}
+.cart-list .item-name a {
+	font-size:14px;
+	line-height:20px;
+}
+.cart-list .item-name a:hover {
+	color:#ff5073;
+}
+.item-reduce {
+	display:inline-block;
+	background:url(../../img/pay/pay-sprite.png) no-repeat;
+	height:18px;
+	width:18px;
+	background-position:-167px -29px;
+}
+.item-add {
+	display:inline-block;
+	background:url(../../img/pay/pay-sprite.png) no-repeat;
+	height:18px;
+	width:18px;
+	background-position:-59px -29px;
+}
+.item-add:hover {
+	background-position:-113px -29px;
+}
+.item-num span {
+	display:inline-block;
+	padding:0 5px;
+	font-size:14px;
+	vertical-align:top;
+
+}
+.item-price {
+	width:125px;
+	height:25px;
+	color:#ff5073;
+	line-height:25px;
+	font-size:14px;
+	float:left;
+}
+.item-del {
+	display:block;
+	height:22px;
+	width:20px;
+	background:url(../../img/pay/pay-sprite.png) no-repeat;
+	background-position:-147px 0;
+	float:right;
+}
+.item-del:hover {
+	background-position:-177px 0;
+}
+.cart-sum{
+	width:100%;
+	height:40px;
+	padding:5px 0;
+	font-size:14px;
+	line-height:30px;
+	border-bottom:1px dashed #ddd;
+}
+.cart-sum-left {
+	float:left;
+}
+.cart-sum-left span {
+	color:#ff5073;
+}
+.cart-sum-right {
+	float:right;
+}
+.cart-num-box {
+	width:100%;
+	height:40px;
+	padding:5px 0;
+	font-size:14px;
+	line-height:30px;
+}
+.cart-num-box .cart-num-left{
+	float:left;
+}
+.cart-num-box .cart-num-left span {
+	color:#ff5073;
+}
+.cart-num-box .cart-num-right {
+	float:right;
+	font-size:18px;
+	color:#ff5073;
+}
+.side-account {
+	display:block;
+	width:230px;
+	height:22px;
+	padding:10px;
+	background:#ec4c6c;
+	font-size:16px;
+	color:#fff;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	-ms-border-radius:5px;
+	-o-border-radius:5px;
+	border-radius:5px;
+	text-align:center;
+}
+.cart-box img{
+	width:85px;
+	height:85px;
+}

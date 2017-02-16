@@ -1,0 +1,116 @@
+[
+	{
+		"good1":{
+			"img":"../img/goodList/good_1.jpg",
+			"title":"SULWHASOO 雪花秀",
+			"sub-title":"顺行卸妆油",
+			"price-old":"¥343.00",
+			"price-now":"¥249.00"
+		},
+		"good2":{
+			"img":"../img/goodList/good_2.jpg",
+			"title":"SULWHASOO 雪花秀",
+			"sub-title":"气垫粉底 + 替换装",
+			"price-old":"¥343.00",
+			"price-now":"¥349.00"
+		},
+		"good3":{
+			"img":"../img/goodList/good_3.jpg",
+			"title":"BANILACO 芭妮兰",
+			"sub-title":"裸透CC霜",
+			"price-old":"¥234.00",
+			"price-now":"¥349.00"
+		},
+		"good4":{
+			"img":"../img/goodList/good_4.jpg",
+			"title":"TONYMOLY 托尼魅力",
+			"sub-title":"女神光彩BB霜",
+			"price-old":"¥115.00",
+			"price-now":"¥74.00"
+		},
+		"good5":{
+			"img":"../img/goodList/good_5.jpg",
+			"title":"GUERISSON",
+			"sub-title":"马油面霜",
+			"price-old":"¥175.00",
+			"price-now":"¥98.00"
+		},
+		"good6":{
+			"img":"../img/goodList/good_6.jpg",
+			"title":"SULWHASOO 雪花秀",
+			"sub-title":"闪理肌本青春眼霜",
+			"price-old":"¥986.00",
+			"price-now":"¥589.00"
+		},
+		"good7":{
+			"img":"../img/goodList/good_7.jpg",
+			"title":"SULWHASOO 雪花秀",
+			"sub-title":"顺行柔和洁颜泡沫",
+			"price-old":"¥300.00",
+			"price-now":"¥237.00"
+		},
+		"good8":{
+			"img":"../img/goodList/good_8.jpg",
+			"title":"IT'S SKIN 伊思",
+			"sub-title":"晶钻美肌再生蜗牛霜",
+			"price-old":"¥529.00",
+			"price-now":"¥269.00"
+		},
+		"good9":{
+			"img":"../img/goodList/good_9.jpg",
+			"title":"IT'S SKIN 伊思",
+			"sub-title":"晶钻蜗牛原液面膜 5片",
+			"price-old":"¥199.00",
+			"price-now":"¥99.00"
+		},
+		"good10":{
+			"img":"../img/goodList/good_10.jpg",
+			"title":"IT'S SKIN 伊思",
+			"sub-title":"蜗牛晶钻泡沫洗面奶",
+			"price-old":"¥119.00",
+			"price-now":"¥79.00"
+		},
+		"good11":{
+			"img":"../img/goodList/good_11.jpg",
+			"title":"IT'S SKIN 伊思",
+			"sub-title":"晶钻美肤红参蜗牛霜",
+			"price-old":"¥528.00",
+			"price-now":"¥269.00"
+		},
+		"good12":{
+			"img":"../img/goodList/good_12.jpg",
+			"title":"MEDIHEAL 美迪惠尔",
+			"sub-title":"PDF舒缓镇定面膜 10片",
+			"price-old":"¥199.00",
+			"price-now":"¥75.00"
+		},
+		"good13":{
+			"img":"../img/goodList/good_13.jpg",
+			"title":"INNISFREE 悦诗风吟",
+			"sub-title":"绿茶籽水分营养精华",
+			"price-old":"¥210.00",
+			"price-now":"¥119.00"
+		},
+		"good14":{
+			"img":"../img/goodList/good_14.jpg",
+			"title":"LANEIGE 兰芝",
+			"sub-title":"水酷凝肌精华露EX",
+			"price-old":"¥399.00",
+			"price-now":"¥238.00"
+		},
+		"good15":{
+			"img":"../img/goodList/good_15.jpg",
+			"title":"BANILACO 芭妮兰",
+			"sub-title":"蜂蜜面霜",
+			"price-old":"¥399.00",
+			"price-now":"¥288.00"
+		},
+		"good16":{
+			"img":"../img/goodList/good_16.jpg",
+			"title":"MAEUX 济州马油",
+			"sub-title":"面霜",
+			"price-old":"¥158.00",
+			"price-now":"¥99.00"
+		}
+	}
+]
