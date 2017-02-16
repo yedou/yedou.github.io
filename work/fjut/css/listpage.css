@@ -1,3 +1,4 @@
+a {outline:none;}
 .clearfix:after {
   content:"";
   visibility:hidden;

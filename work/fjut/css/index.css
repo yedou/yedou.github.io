@@ -1,6 +1,7 @@
 body,html {
     font-family: PingFangSC-Regular;
 }
+a {outline:none;}
 ul {
     padding-left:0;
 }
