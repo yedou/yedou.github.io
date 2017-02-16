@@ -45,7 +45,7 @@ TxtRotate.prototype.tick = function() {
   }, delta);
 };
 
-window.onload = function() {
+
     var toggle = false;
  $(".navbar-toggle").click(function() {
      
@@ -87,4 +87,3 @@ window.onload = function() {
         typing();
         
     })
-}

@@ -208,7 +208,5 @@
 				$(this).toggleClass("flip");
 			})
             
-		    if($(".wrap")) {
-		    	alert("加载完成");
-		    }
+		  
 	
