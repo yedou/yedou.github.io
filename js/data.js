@@ -80,6 +80,7 @@
                 })
         
         });
+        NProgress.inc();
         setTimeout(function(){
             NProgress.done();
             $(".mark").animate({"opacity":0},200,function(){$(this).css("display","none")});
