@@ -10,13 +10,11 @@
            //将数据存入cookie避免调用时重复加载
            
            $.cookie("data",JSON.stringify(data),{"path":"/"});
-       })
-        .fail(function(){console.log("fail loading")});
+
+            var data = JSON.parse($.cookie("data"));
         
-        var data = JSON.parse($.cookie("data"));
-        console.log(data);
         var data1 = JSON.parse($.cookie("data1"));
-        console.log(data1);
+        
         var zhen = data[0].zh;
         if(screen&&screen.width<768) {
             var info0 = zhen[0].page1.info[0].replace(/<\/br>/g,"");
@@ -82,3 +80,8 @@
             
         })
         
+
+       })
+        .fail(function(){console.log("fail loading")});
+        
+       
