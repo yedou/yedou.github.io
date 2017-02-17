@@ -80,10 +80,11 @@
                 })
         
         });
-        setTimeout(function(){NProgress.set(0.4);NProgress.inc()},2000);
+        
         setTimeout(function(){
             NProgress.done();
             $(".mark").animate({"opacity":0},200,function(){$(this).css("display","none")});
+            typing();
         },5000)
         
 

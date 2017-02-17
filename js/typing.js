@@ -71,7 +71,7 @@ TxtRotate.prototype.tick = function() {
     }
   }
   }
-    typing();
+    
     var turndown = true;
     $(".box").click(function() {
         clearTimeout(timer);
