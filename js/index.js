@@ -180,7 +180,8 @@
 			
 			
 			//头像apple tv效果
-			var $avatar = $(".avatar"),$shine = $(".shine"),$layer = $(".layer-1");
+			if(screen&&screen.width>768) {
+				var $avatar = $(".avatar"),$shine = $(".shine"),$layer = $(".layer-1");
 			$(".page3").on("mousemove",function(e) {
 				var w = $(e.currentTarget).innerWidth(),h = $(e.currentTarget).innerHeight();
 				var offsetX = 0.5 - e.pageX/w,offsetY = 0.5 - e.pageY/h,
@@ -200,6 +201,7 @@
 				}
 				$shine.css('background', 'linear-gradient(' + (angle - 90) + 'deg, rgba(255,255,255,' + e.pageY / h + ') 0%,rgba(255,255,255,0) 80%)');
 			});
+			}
 			// 中英文切换
 			// $(".box").click(function() {
 			// 	$(this).toggleClass("flip");
