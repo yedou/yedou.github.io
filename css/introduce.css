@@ -368,6 +368,7 @@ margin-left:30px;}
 @media only screen and (max-width:768px) {
     .page2 .desc-box {
         min-width:300px;
+        min-height:150px;
     }
 }
 
@@ -381,6 +382,7 @@ margin-left:30px;}
 @media only screen and (max-width:768px) {
     .desc-box h2 {
     margin:0;
+    padding-left:20px;
     font-size:20px;
     }
 }
@@ -396,7 +398,8 @@ margin-left:30px;}
 }
 @media only screen and (max-width:768px) {
     .desc-box li {
-        padding-top:0;
+        padding-top:5px;
+        padding-left:-28px;
         font-size:12px;
     }
 }

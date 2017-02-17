@@ -20,7 +20,7 @@ body {
 }
 
 .header {
-  background:#edf2fa;
+ 
   height:130px;
   width:100%;
  position: relative;
@@ -111,7 +111,7 @@ display:block;
   margin-top:20px;
 }
 .section1 {
-  background: #edf2fa;
+ 
   height:750px;
   border-bottom:1px solid #fff;
   position: relative;
@@ -183,7 +183,7 @@ display:block;
    color:#ccc;
  }
 .section2 {
-  background: #edf2fa;
+ 
   height: 1300px;
   border-bottom:1px solid #fff;
 }
@@ -285,7 +285,7 @@ display:block;
 }
 
 .footer {
-  background: #edf2fa;
+  
   width: 100%;
   height: 450px;
 
