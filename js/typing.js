@@ -84,6 +84,6 @@ TxtRotate.prototype.tick = function() {
             $(".txt-rotate").attr("rotate","前端工程师,自学者,完美主义,热爱一切新事物,前端开发工程师");
             turndown = true;
         }
-        typing();
+        setTimeout(typing,1000);
         
     })
