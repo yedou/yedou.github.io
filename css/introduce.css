@@ -399,9 +399,10 @@ margin-left:30px;}
 @media only screen and (max-width:768px) {
     .desc-box li {
         padding-top:5px;
-        padding-left:-28px;
+        
         font-size:12px;
     }
+    .desc-box ul {padding-left:20px;}
 }
 /*联系我*/
 .page3 dt {
