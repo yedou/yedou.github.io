@@ -39,11 +39,11 @@
 				if($preIndex==0) {
 					setTimeout(function() {
 						$(".active-line").css("animation",line);
-						$wrap.stop().animate({left:-$index*$w},400,"easeInOutQunit");
+						$wrap.stop().animate({left:-$index*$w},400,"easeInOutQuart");
 					},400)
 				} else {
 						$(".active-line").css("animation",line);
-						$wrap.stop().animate({left:-$index*$w},400,"easeInOutQunit");
+						$wrap.stop().animate({left:-$index*$w},400,"easeInOutQuart");
 				}
 				if($index==3){
 					$index = 2;
@@ -56,11 +56,11 @@
 			function work() {
 				if($index==0) {
 					setTimeout(function() {
-						$(".work").stop().animate({opacity:1},400,"easeInOutQunit");
+						$(".work").stop().animate({opacity:1},400,"easeInOutQuart");
 					},400)
 				}else{
 					
-						$(".work").stop().animate({opacity:0},400,"easeInOutQunit");
+						$(".work").stop().animate({opacity:0},400,"easeInOutQuart");
 					
 				}
 			}
@@ -102,13 +102,13 @@
 								$(".work").animate({"opacity":0},400,function() {
 									var line="line"+($index)+" .4s forwards";
 									$(".active-line").css("animation",line);
-									$wrap.stop().animate({left:-$index*$w},400,"easeInOutQunit");
+									$wrap.stop().animate({left:-$index*$w},400,"easeInOutQuart");
 								})
 							} else {
 								
 								var line="line"+($index)+" .4s forwards";
 									$(".active-line").css("animation",line);
-									$wrap.stop().animate({left:-$index*$w},400,"easeInOutQunit");
+									$wrap.stop().animate({left:-$index*$w},400,"easeInOutQuart");
 							}
 							
 						}
@@ -124,11 +124,11 @@
                             console.log($index);
 							var line="line0"+($index)+" .4s forwards";
 							$(".active-line").css("animation",line);
-							$wrap.stop().animate({left:-$index*$w},400,"easeInOutQunit");
+							$wrap.stop().animate({left:-$index*$w},400,"easeInOutQuart");
 							if($index==0) {
 								$(".active-line").css("animation",line);
-								$wrap.stop().animate({left:-$index*$w},400,"easeInOutQunit",function(){
-									$(".work").animate({"opacity":1},400,"easeInOutQunit");
+								$wrap.stop().animate({left:-$index*$w},400,"easeInOutQuart",function(){
+									$(".work").animate({"opacity":1},400,"easeInOutQuart");
 								});
 							}
 						}
@@ -143,7 +143,7 @@
 					$preIndex =1;
 					var line="line"+($index)+" .6s forwards";
 					$(".active-line").css("animation",line);
-					$wrap.stop().animate({left:-$index*$w},400,"easeInOutQunit");
+					$wrap.stop().animate({left:-$index*$w},400,"easeInOutQuart");
 				},400);
 			});
             //点击logo回到起始页面
@@ -151,8 +151,8 @@
                 if($index==1) {
                     line="line00 .4s forwards";
                     $(".active-line").css("animation",line);
-								$wrap.stop().animate({left:0*$w},400,"easeInOutQunit",function(){
-									$(".work").animate({"opacity":1},400,"easeInOutQunit");
+								$wrap.stop().animate({left:0*$w},400,"easeInOutQuart",function(){
+									$(".work").animate({"opacity":1},400,"easeInOutQuart");
 								});
                     $index=0;$preIndex=0;
                 }
@@ -160,7 +160,7 @@
                    line="line02 .4s forwards";
                     $(".active-line").css("animation",line);
 								$wrap.stop().animate({left:0*$w},400,function(){
-									$(".work").animate({"opacity":1},400,"easeInOutQunit");
+									$(".work").animate({"opacity":1},400,"easeInOutQuart");
 								});
                     $index=0;$preIndex=0;                     
                 }
