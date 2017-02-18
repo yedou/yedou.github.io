@@ -16,51 +16,51 @@
 				if($index==3){return false};
 				if($index-$preIndex>0) {
 					if($preIndex==0) {
-					var line="line"+($index)+" .4s forwards";
+					var line="line"+($index)+" .8s forwards";
 					}
 					if($preIndex==1) {
-						var line="line"+(2)+" .4s forwards";
+						var line="line"+(2)+" .8s forwards";
 					}
 					if($preIndex==0&&$index==2) {
-						var line="line"+(3)+" .4s forwards";
+						var line="line"+(3)+" .8s forwards";
 					}
 				}
 				if($index-$preIndex<=0) {
 					if($preIndex==2&&$index==1) {
-					var line="line"+"01"+" .4s forwards";
+					var line="line"+"01"+" .8s forwards";
 					}
 					if($preIndex==2&&$index==0) {
-					var line="line"+"02"+" .4s forwards";
+					var line="line"+"02"+" .8s forwards";
 					}
 					if($preIndex==1&&$index==0) {
-					var line="line"+"00"+" .4s forwards";
+					var line="line"+"00"+" .8s forwards";
 					}
 				}
 				if($preIndex==0) {
 					setTimeout(function() {
 						$(".active-line").css("animation",line);
-						$wrap.stop().animate({left:-$index*$w},400,"easeInOutQuart");
-					},400)
+						$wrap.stop().animate({left:-$index*$w},800,"easeInOutQuart");
+					},800)
 				} else {
 						$(".active-line").css("animation",line);
-						$wrap.stop().animate({left:-$index*$w},400,"easeInOutQuart");
+						$wrap.stop().animate({left:-$index*$w},800,"easeInOutQuart");
 				}
 				if($index==3){
 					$index = 2;
 				}
 				// $(".active-line").css("animation",line);
-				// $wrap.stop().animate({left:-$index*$w},400);
+				// $wrap.stop().animate({left:-$index*$w},800);
 				$preIndex = $index;
 				work();
 			});
 			function work() {
 				if($index==0) {
 					setTimeout(function() {
-						$(".work").stop().animate({opacity:1},400,"easeInOutQuart");
-					},400)
+						$(".work").stop().animate({opacity:1},800,"easeInOutQuart");
+					},800)
 				}else{
 					
-						$(".work").stop().animate({opacity:0},400,"easeInOutQuart");
+						$(".work").stop().animate({opacity:0},800,"easeInOutQuart");
 					
 				}
 			}
@@ -87,7 +87,7 @@
 				var e = e || window.event;
                 e.preventDefault();
 				wheelNum++;
-				if(wheelNum%5==4) {
+				if(wheelNum%5==8) {
 						//向下滚动
                         
 						var down = true;
@@ -99,16 +99,16 @@
 								}
                                 console.log($index);
 							if($index==1) {
-								$(".work").animate({"opacity":0},400,function() {
-									var line="line"+($index)+" .4s forwards";
+								$(".work").animate({"opacity":0},800,function() {
+									var line="line"+($index)+" .8s forwards";
 									$(".active-line").css("animation",line);
-									$wrap.stop().animate({left:-$index*$w},400,"easeInOutQuart");
+									$wrap.stop().animate({left:-$index*$w},800,"easeInOutQuart");
 								})
 							} else {
 								
-								var line="line"+($index)+" .4s forwards";
+								var line="line"+($index)+" .8s forwards";
 									$(".active-line").css("animation",line);
-									$wrap.stop().animate({left:-$index*$w},400,"easeInOutQuart");
+									$wrap.stop().animate({left:-$index*$w},800,"easeInOutQuart");
 							}
 							
 						}
@@ -122,13 +122,13 @@
 								return false;
 							}
                             console.log($index);
-							var line="line0"+($index)+" .4s forwards";
+							var line="line0"+($index)+" .8s forwards";
 							$(".active-line").css("animation",line);
-							$wrap.stop().animate({left:-$index*$w},400,"easeInOutQuart");
+							$wrap.stop().animate({left:-$index*$w},800,"easeInOutQuart");
 							if($index==0) {
 								$(".active-line").css("animation",line);
-								$wrap.stop().animate({left:-$index*$w},400,"easeInOutQuart",function(){
-									$(".work").animate({"opacity":1},400,"easeInOutQuart");
+								$wrap.stop().animate({left:-$index*$w},800,"easeInOutQuart",function(){
+									$(".work").animate({"opacity":1},800,"easeInOutQuart");
 								});
 							}
 						}
@@ -137,30 +137,30 @@
 				$preIndex = $index;
 			}
 			$(".work a").click(function() {
-				$(".work").stop().animate({opacity:0},400);
+				$(".work").stop().animate({opacity:0},800);
 				setTimeout(function() {
 					$index = 1;
 					$preIndex =1;
 					var line="line"+($index)+" .6s forwards";
 					$(".active-line").css("animation",line);
-					$wrap.stop().animate({left:-$index*$w},400,"easeInOutQuart");
-				},400);
+					$wrap.stop().animate({left:-$index*$w},800,"easeInOutQuart");
+				},800);
 			});
             //点击logo回到起始页面
             $(".navbar-brand").click(function() {
                 if($index==1) {
-                    line="line00 .4s forwards";
+                    line="line00 .8s forwards";
                     $(".active-line").css("animation",line);
-								$wrap.stop().animate({left:0*$w},400,"easeInOutQuart",function(){
-									$(".work").animate({"opacity":1},400,"easeInOutQuart");
+								$wrap.stop().animate({left:0*$w},800,"easeInOutQuart",function(){
+									$(".work").animate({"opacity":1},800,"easeInOutQuart");
 								});
                     $index=0;$preIndex=0;
                 }
                 if($index==2) {
-                   line="line02 .4s forwards";
+                   line="line02 .8s forwards";
                     $(".active-line").css("animation",line);
-								$wrap.stop().animate({left:0*$w},400,function(){
-									$(".work").animate({"opacity":1},400,"easeInOutQuart");
+								$wrap.stop().animate({left:0*$w},800,function(){
+									$(".work").animate({"opacity":1},800,"easeInOutQuart");
 								});
                     $index=0;$preIndex=0;                     
                 }
@@ -173,7 +173,7 @@
                 $(this).click(function(e) {
                     e.preventDefault();
                     var curTop = $(".section").eq(index).offset().top-150;
-                    $("html,body").animate({scrollTop:curTop},400);
+                    $("html,body").animate({scrollTop:curTop},800);
                 })
             })
         }
