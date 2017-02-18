@@ -39,28 +39,28 @@
 				if($preIndex==0) {
 					setTimeout(function() {
 						$(".active-line").css("animation",line);
-						$wrap.stop().animate({left:-$index*$w},800,"easeInOutQuart");
-					},800)
+						$wrap.stop().animate({left:-$index*$w},600,"easeInOutQuart");
+					},600)
 				} else {
 						$(".active-line").css("animation",line);
-						$wrap.stop().animate({left:-$index*$w},800,"easeInOutQuart");
+						$wrap.stop().animate({left:-$index*$w},600,"easeInOutQuart");
 				}
 				if($index==3){
 					$index = 2;
 				}
 				// $(".active-line").css("animation",line);
-				// $wrap.stop().animate({left:-$index*$w},800);
+				// $wrap.stop().animate({left:-$index*$w},600);
 				$preIndex = $index;
 				work();
 			});
 			function work() {
 				if($index==0) {
 					setTimeout(function() {
-						$(".work").stop().animate({opacity:1},800,"easeInOutQuart");
-					},800)
+						$(".work").stop().animate({opacity:1},600,"easeInOutQuart");
+					},600)
 				}else{
 					
-						$(".work").stop().animate({opacity:0},800,"easeInOutQuart");
+						$(".work").stop().animate({opacity:0},600,"easeInOutQuart");
 					
 				}
 			}
@@ -87,7 +87,7 @@
 				var e = e || window.event;
                 e.preventDefault();
 				wheelNum++;
-				if(wheelNum%5==8) {
+				if(wheelNum%5==4) {
 						//向下滚动
                         
 						var down = true;
@@ -99,16 +99,16 @@
 								}
                                 console.log($index);
 							if($index==1) {
-								$(".work").animate({"opacity":0},800,function() {
+								$(".work").animate({"opacity":0},600,function() {
 									var line="line"+($index)+" .8s forwards";
 									$(".active-line").css("animation",line);
-									$wrap.stop().animate({left:-$index*$w},800,"easeInOutQuart");
+									$wrap.stop().animate({left:-$index*$w},600,"easeInOutQuart");
 								})
 							} else {
 								
 								var line="line"+($index)+" .8s forwards";
 									$(".active-line").css("animation",line);
-									$wrap.stop().animate({left:-$index*$w},800,"easeInOutQuart");
+									$wrap.stop().animate({left:-$index*$w},600,"easeInOutQuart");
 							}
 							
 						}
@@ -124,11 +124,11 @@
                             console.log($index);
 							var line="line0"+($index)+" .8s forwards";
 							$(".active-line").css("animation",line);
-							$wrap.stop().animate({left:-$index*$w},800,"easeInOutQuart");
+							$wrap.stop().animate({left:-$index*$w},600,"easeInOutQuart");
 							if($index==0) {
 								$(".active-line").css("animation",line);
-								$wrap.stop().animate({left:-$index*$w},800,"easeInOutQuart",function(){
-									$(".work").animate({"opacity":1},800,"easeInOutQuart");
+								$wrap.stop().animate({left:-$index*$w},600,"easeInOutQuart",function(){
+									$(".work").animate({"opacity":1},600,"easeInOutQuart");
 								});
 							}
 						}
@@ -137,43 +137,43 @@
 				$preIndex = $index;
 			}
 			$(".work a").click(function() {
-				$(".work").stop().animate({opacity:0},800);
+				$(".work").stop().animate({opacity:0},600);
 				setTimeout(function() {
 					$index = 1;
 					$preIndex =1;
 					var line="line"+($index)+" .6s forwards";
 					$(".active-line").css("animation",line);
-					$wrap.stop().animate({left:-$index*$w},800,"easeInOutQuart");
-				},800);
+					$wrap.stop().animate({left:-$index*$w},600,"easeInOutQuart");
+				},600);
 			});
             //点击logo回到起始页面
             $(".navbar-brand").click(function() {
                 if($index==1) {
                     line="line00 .8s forwards";
                     $(".active-line").css("animation",line);
-								$wrap.stop().animate({left:0*$w},800,"easeInOutQuart",function(){
-									$(".work").animate({"opacity":1},800,"easeInOutQuart");
+								$wrap.stop().animate({left:0*$w},600,"easeInOutQuart",function(){
+									$(".work").animate({"opacity":1},600,"easeInOutQuart");
 								});
                     $index=0;$preIndex=0;
                 }
                 if($index==2) {
                    line="line02 .8s forwards";
                     $(".active-line").css("animation",line);
-								$wrap.stop().animate({left:0*$w},800,function(){
-									$(".work").animate({"opacity":1},800,"easeInOutQuart");
+								$wrap.stop().animate({left:0*$w},600,function(){
+									$(".work").animate({"opacity":1},600,"easeInOutQuart");
 								});
                     $index=0;$preIndex=0;                     
                 }
             })
             
         } else {
-            console.log("list")
+            
             $(".navbar-nav li a").attr("data-toggle","collapse");
             $(".listItem a").each(function(index){
                 $(this).click(function(e) {
                     e.preventDefault();
                     var curTop = $(".section").eq(index).offset().top-150;
-                    $("html,body").animate({scrollTop:curTop},800);
+                    $("html,body").animate({scrollTop:curTop},600);
                 })
             })
         }
