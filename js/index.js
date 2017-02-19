@@ -16,24 +16,24 @@
 				if($index==3){return false};
 				if($index-$preIndex>0) {
 					if($preIndex==0) {
-					var line="line"+($index)+" .8s forwards";
+					var line="line"+($index)+" .6s forwards";
 					}
 					if($preIndex==1) {
-						var line="line"+(2)+" .8s forwards";
+						var line="line"+(2)+" .6s forwards";
 					}
 					if($preIndex==0&&$index==2) {
-						var line="line"+(3)+" .8s forwards";
+						var line="line"+(3)+" .6s forwards";
 					}
 				}
 				if($index-$preIndex<=0) {
 					if($preIndex==2&&$index==1) {
-					var line="line"+"01"+" .8s forwards";
+					var line="line"+"01"+" .6s forwards";
 					}
 					if($preIndex==2&&$index==0) {
-					var line="line"+"02"+" .8s forwards";
+					var line="line"+"02"+" .6s forwards";
 					}
 					if($preIndex==1&&$index==0) {
-					var line="line"+"00"+" .8s forwards";
+					var line="line"+"00"+" .6s forwards";
 					}
 				}
 				if($preIndex==0) {
@@ -57,10 +57,8 @@
 				if($index==0) {
 					setTimeout(function() {
 						$(".work").stop().animate({opacity:1},600,"easeInOutQuart");
-					},600)
+					},200)
 				}else{
-					
-						$(".work").stop().animate({opacity:0},600,"easeInOutQuart");
 					
 				}
 			}
@@ -100,13 +98,13 @@
                                 console.log($index);
 							if($index==1) {
 								$(".work").animate({"opacity":0},600,function() {
-									var line="line"+($index)+" .8s forwards";
+									var line="line"+($index)+" .6s forwards";
 									$(".active-line").css("animation",line);
 									$wrap.stop().animate({left:-$index*$w},600,"easeInOutQuart");
 								})
 							} else {
 								
-								var line="line"+($index)+" .8s forwards";
+								var line="line"+($index)+" .6s forwards";
 									$(".active-line").css("animation",line);
 									$wrap.stop().animate({left:-$index*$w},600,"easeInOutQuart");
 							}
@@ -122,13 +120,13 @@
 								return false;
 							}
                             console.log($index);
-							var line="line0"+($index)+" .8s forwards";
+							var line="line0"+($index)+" .6s forwards";
 							$(".active-line").css("animation",line);
 							$wrap.stop().animate({left:-$index*$w},600,"easeInOutQuart");
 							if($index==0) {
 								$(".active-line").css("animation",line);
 								$wrap.stop().animate({left:-$index*$w},600,"easeInOutQuart",function(){
-									$(".work").animate({"opacity":1},600,"easeInOutQuart");
+									$(".work").animate({"opacity":1},200,"easeInOutQuart");
 								});
 							}
 						}
@@ -149,18 +147,18 @@
             //点击logo回到起始页面
             $(".navbar-brand").click(function() {
                 if($index==1) {
-                    line="line00 .8s forwards";
+                    line="line00 .6s forwards";
                     $(".active-line").css("animation",line);
 								$wrap.stop().animate({left:0*$w},600,"easeInOutQuart",function(){
-									$(".work").animate({"opacity":1},600,"easeInOutQuart");
+									$(".work").animate({"opacity":1},200,"easeInOutQuart");
 								});
                     $index=0;$preIndex=0;
                 }
                 if($index==2) {
-                   line="line02 .8s forwards";
+                   line="line02 .6s forwards";
                     $(".active-line").css("animation",line);
 								$wrap.stop().animate({left:0*$w},600,function(){
-									$(".work").animate({"opacity":1},600,"easeInOutQuart");
+									$(".work").animate({"opacity":1},200,"easeInOutQuart");
 								});
                     $index=0;$preIndex=0;                     
                 }
