@@ -59,7 +59,7 @@
 						$(".work").stop().animate({opacity:1},200,"easeInOutQuart");
 					},200)
 				}else{
-					$(".work").stop().animate({opacity:1},200,"easeInOutQuart");
+					$(".work").stop().animate({opacity:0},200,"easeInOutQuart");
 				}
 			}
 			// 封装的鼠标滚轮事件
