@@ -56,10 +56,10 @@
 			function work() {
 				if($index==0) {
 					setTimeout(function() {
-						$(".work").stop().animate({opacity:1},600,"easeInOutQuart");
+						$(".work").stop().animate({opacity:1},200,"easeInOutQuart");
 					},200)
 				}else{
-					
+					$(".work").stop().animate({opacity:1},200,"easeInOutQuart");
 				}
 			}
 			// 封装的鼠标滚轮事件
@@ -97,7 +97,7 @@
 								}
                                 console.log($index);
 							if($index==1) {
-								$(".work").animate({"opacity":0},600,function() {
+								$(".work").animate({"opacity":0},200,function() {
 									var line="line"+($index)+" .6s forwards";
 									$(".active-line").css("animation",line);
 									$wrap.stop().animate({left:-$index*$w},600,"easeInOutQuart");
@@ -135,7 +135,7 @@
 				$preIndex = $index;
 			}
 			$(".work a").click(function() {
-				$(".work").stop().animate({opacity:0},600);
+				$(".work").stop().animate({opacity:0},200);
 				setTimeout(function() {
 					$index = 1;
 					$preIndex =1;
